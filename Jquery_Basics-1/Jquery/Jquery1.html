@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p.intro").hide();
+  });
+});
+
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(this).hide();
+
+            });
+        });
+
+        $(document).ready(function () {
+            $("#btn2").click(function () {
+                $("b").hide();
+
+            });
+        });
+
+        $(document).ready(function () {
+            $("#btn3").click(function () {
+                $("p:first").hide();
+            });
+        });
+        $(document).ready(function () {
+            $("tr:even").css("background-color", "yellow");
+        });
+
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("p1").hide();
+            });
+            $("#show").click(function () {
+                $("p1").show();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <h2>Car Parking</h2>
+
+    <p>First Car.</p>
+    <p>Second Car.</p>
+
+    <button id="btn3">Click me</button>
+
+    <h2>Bus Parking</h2>
+
+    <b>First Bus.</b>
+    <b>Second Bus.</b>
+
+    <button id="btn2">Hide paragraphs</button>
+
+    <h2 class="intro">H2 Heading</h2>
+
+    <p class="intro"> A paragraph.</p>
+    <p> Another paragraph.</p>
+
+    <button>Click me</button>
+
+
+    <h2> A heading</h2>
+
+    <p>A paragraph.</p>
+    <p> Another paragraph.</p>
+
+    <button id="btn1">Hide Btn</button>
+
+    <table style=" font-family:Arial; border:1px solid red; margin:auto ">
+        <thead>
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+                    Address
+                </td>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    Todd
+                </td>
+                <td>
+                    Soan
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Johns
+                </td>
+                <td>
+                    Wusk
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Alexi
+                </td>
+                <td>
+                    Runns
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Xandria
+                </td>
+                <td>
+                    N23
+                </td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+    <p1> click on the "Hide" button to  disappear.</p1>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+</body>
+</html>
